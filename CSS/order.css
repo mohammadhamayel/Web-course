@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-radius: 3px;    
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:rgba(228, 27, 23,0.8);}
+tr:nth-child(even) {background-color: rgba(228, 27, 23,0.8);}
+th {
+    background-color: #535051;
+    color: white;
+}
+
+.Zimage{
+	width:100%;
+	min-height: 100px;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	z-index: -1;
+	opacity: 0.5;
+}

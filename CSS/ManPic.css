@@ -1,0 +1,96 @@
+Body{
+	background:url(../Image/Alquds6.jpg);
+	background-size:100% 710px;
+	background-size: cover;	
+}
+#Sing{
+	color:#E41B17;
+	padding-top:30px;
+	padding-left:60px;
+	font-size:35px;
+	margin:auto;
+	background-color:#535051;
+	width:500px;
+	height: 950px;
+	border-radius:10px;
+	opacity:.9;	
+	margin-top: 40px;
+}
+#Sing input{
+     margin-top:30px;
+	 width:200px;
+	 height:40px;
+	font-size:25px;
+	border-radius:5px;
+}
+
+#Sing input[name="capacity"] {
+    margin-left:95px;
+}
+#Sing input[name="place"] {
+    margin-left:15px;
+}
+#Sing input[name="arrival"] {
+    width:200px;
+    margin-left:45px
+}
+
+#Sing input[name="Date"] {
+    width:200px;
+    margin-left: 154px;
+}
+#Sing input[name="Transporation"] {
+    width:200px;
+    margin-left: 20px;  
+}
+#Sing input[name="Price"] {
+    width:150px;
+    margin-left:30px;  
+}
+#Sing input[name="baby"] {
+    width:200px;;
+    margin-left:35px;  
+}
+
+#Sing input[name="sex1"]{
+	margin-top:12px;
+	width:25px;
+}
+#Sing input[type="checkbox"]{
+	margin-top:5px;
+    width:25px;
+    display: inline-block;
+}
+#Sing input[type="submit"]{
+	margin:10px;
+	width:150px;
+	border-style: none;
+	border-radius:50px;
+	margin-left:280px;
+	height:50px;
+	background:#E41B17;
+	color:white;
+	font-weight:bold;
+}
+#Sing input[type="submit"]:hover{
+	cursor: pointer;
+	background:white;
+	color:#E41B17;
+}
+
+form a {
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 19px;
+	text-decoration:none;
+	background: #E41B17
+	}
+
+form a:hover {
+	font-size: 19px;
+	text-decoration:none;
+	color:#E41B17;
+	background: white;
+}
+

@@ -1,0 +1,405 @@
+
+body{
+	margin: 0px;	
+	padding:0px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	background-color: white;
+}
+/* Header Css Start*/
+@font-face {
+	font-family:DutchHarley;
+	src: url('../Fonts/Fluo Gums.ttf');
+}
+@media(min-width:1160px){
+  #LeftNav {
+	padding-left:229px;
+  }
+}
+.Brand{
+	display:inline-block;
+	font-family:DutchHarley;
+	text-transform:uppercase;
+	padding-top:22px;
+	font-size:14px;
+	color:#E41B17
+	
+}
+
+header{
+	background-color:#FFE505;
+	background-color:rgb(243,247,153 );
+	background-color:rgb(83,81,81);
+	
+
+}
+.logo{
+	display:inline-block;
+	max-width:50px;
+	max-height:50px;
+	border-radius: 50%;
+	padding-top:8px
+	}
+nav {
+	float:left
+}
+nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+
+}
+
+nav li {
+	display:inline-block;
+	margin-left : 50px;
+	padding-top:20px;
+	position: relative; /* to make the child absolute for the li  */
+}
+
+
+nav a {
+ color:white;		
+ text-decoration:none;
+ /*text-transform:uppercase;*/
+ font-size:14px;
+ 
+ 
+}
+nav a:not(.notSoDifferent)::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color:#E41B17;  	  
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover:not(.notSoDifferent)::before {
+  width: 100%;
+}
+nav a:hover:not(.notSoDifferent):hover {
+	background:white;
+	background-color:#E41B17;  	
+	color: white;
+}
+.different {
+  border-radius: 4px;
+  background-color: #535051;
+  border: dash;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  width: 100px;
+  padding:8px;
+  cursor: pointer;
+}
+
+.different span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.different span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.different:hover span {
+  padding-right: 15px;
+}
+
+.different:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Header Css End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slide Show css Start*/
+img {vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 800px;
+	max-height: 500px;
+	position: relative;
+	margin: 0 auto;
+  }
+  
+  /* Caption text */
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  
+
+  /* The dots/bullets/indicators */
+  .dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;     /*  The transition effect will start when */
+	}                                            /* the specified CSS property (background-color) changes value  {
+													transition-property: background-color;
+													transition-duration: 0.6s;
+													ease :style start slowly end fast }*/
+  
+  .active {
+	background-color: #717171;
+	background-color: #E41B17;
+	
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 2s;
+  }
+  @keyframes fade {   /*The @keyframes rule specifies the animation code.*/	
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+	.text {font-size: 11px}
+  }
+  
+/* Slide Show css End*/
+
+
+
+/* gallery */ 
+div.gallery {
+    margin: 5px;
+	border-radius: 50%;
+    float: left;
+	width: 180px;
+	height: 280px;
+}
+
+div.gallery:hover {
+    border: 1px hidden  #777;
+}
+
+div.gallery img {
+    width: 100%;
+	height: 180px;
+	border-radius: 50%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+/*footer */
+
+footer{
+}
+h1{
+	color:#E41B17;
+	font-size: 20px;
+	font-family: DutchHarley;
+	text-transform:uppercase;
+}
+
+p{
+	font: normal normal normal 14px/1.3em 'courier new',
+	courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+	font-size: 14px;
+}
+
+.Zimage{
+	width:100%;
+	min-height: 1700px;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Grid System Css start */
+
+.clearfix {
+    overflow: auto;
+}
+
+.container{
+	max-width:1200px;
+	padding: 0 0;
+	margin: 0 auto;
+	text-align:center;
+}
+.respImage{
+	width:auto;
+	height:auto;
+	max-width:100%;
+}
+
+*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.53%;
+}
+.span_10_of_12 {
+  	width: 83.06%;
+}
+
+.span_9_of_12 {
+  	width: 74.6%;
+}
+
+.span_8_of_12 {
+  	width: 66.13%;
+}
+
+.span_7_of_12 {
+  	width: 57.66%;
+}
+
+.span_6_of_12 {
+  	width: 49.2%;
+}
+
+.span_5_of_12 {
+  	width: 40.73%;
+}
+
+.span_4_of_12 {
+  	width: 32.26%;
+}
+
+.span_3_of_12 {
+  	width: 23.8%;
+}
+
+.span_2_of_12 {
+  	width: 15.33%;
+}
+
+.span_1_of_12 {
+  	width: 6.866%;
+}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
+
+/* Grid System Css End */

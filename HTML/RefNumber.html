@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/picnic.css">    
+    <link rel="stylesheet" type="text/css" href="../CSS/RefNumber.css">
+    
+</head>
+
+<body>
+        <div class="section group">
+                <div class="container">
+        
+                  <div class="col span_12_of_12">
+                    <div class="slideshow-container">
+                      <div class="mySlides fade">
+                       <a href="#"><img src="../Image/picnic_1.jpg" style="width:100%;height: 500px" class=" respImage"></a> 
+                        <div class="text">Caption Text</div>
+                      </div>
+        
+                      <div class="mySlides fade">
+                      <a href="#"><img src="../Image/picnic_2.jpg" style="width:100%;height: 500px" class=" respImage"> </a> 
+                                              <div class="text">Caption Text</div>
+                      </div>
+        
+                      <div class="mySlides fade">
+                       <a href="#"><img src="../Image/picnic_3.jpg" style="width:100%;height: 500px" class=" respImage"></a> 
+                        <div class="text">Caption Text</div>
+                      </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <div class="section group">
+        <div class="container">
+            <div class="col span_3_of_12"></div>
+            <div class="col span_6_of_12">
+                <div id="Sing">
+                    <p style="font-family: DH;text-transform: uppercase;font-size: 19px">Picnic Info</p>
+                    <table>
+                        <tr>
+                            <th>RefNumber</th>
+                            <td colspan="2">2</td>
+                        </tr>
+                        <tr>
+                            <th>Departual Time</th>
+                            <td colspan="2"></td>
+                            
+
+                        </tr>
+                        <tr>
+                            <th>Return Time</th>
+                            <td colspan="2"></td>
+                            
+
+                        </tr>
+                        <tr>
+                            <th>Arrival Time</th>
+                            <td colspan="2">ssaasfasfasfsafasfsaf</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Activites</th>
+                            <td colspan="2">asasf</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Food </th>
+                            <td colspan="2"></td>
+                            
+                        </tr>
+                        <tr>
+                            <th>conditions and restrections </th>
+                            <td colspan="2"></td>
+                            
+
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+        var slideIndex = 0;
+        showSlides();
+      
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          console.log(slides)
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+      </script>
+      
+</body>
+
+</html>
